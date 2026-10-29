@@ -1,11 +1,14 @@
 {
+  "id": "/la-cocina-de-la-afri/",
   "name": "La Cocina de la Afri",
   "short_name": "Cocina Afri",
   "description": "Las recetas de la Afri, paso a paso.",
   "lang": "es",
-  "start_url": "./",
-  "scope": "./",
+  "dir": "ltr",
+  "start_url": "/la-cocina-de-la-afri/index.html",
+  "scope": "/la-cocina-de-la-afri/",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#fbf8f2",
   "theme_color": "#fbf8f2",
   "icons": [

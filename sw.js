@@ -3,7 +3,7 @@
  * y consultar las recetas ya visitadas sin conexión.
  * Al cambiar archivos importantes, sube el número de VERSION para renovar la caché.
  */
-var VERSION = "afri-v4";
+var VERSION = "afri-v5";
 var BASICOS = [
   "./",
   "index.html",
