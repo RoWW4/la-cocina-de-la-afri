@@ -103,7 +103,7 @@
       '<header class="cabecera" id="cabecera-sitio">' +
         '<div class="contenedor cabecera__fila">' +
           '<a class="marca" href="./" aria-label="La Cocina de la Afri, ir al inicio">' +
-            '<img src="assets/logo/logo-240.png" width="96" height="96" alt="">' +
+            '<img src="assets/logo/logo-480.png" width="120" height="120" alt="">' +
             '<span class="marca__nombre">La Cocina de la Afri<span>Recetario familiar</span></span>' +
           "</a>" +
           '<button class="menu-boton" type="button" aria-expanded="false" aria-controls="nav-principal">' +
