@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Cocina de la Afri · Recetario familiar</title>
+  <meta name="description" content="Las recetas de la Afri ordenadas y explicadas paso a paso: bizcochos, dulces de sartén, platos de cuchara y comidas de diario.">
+  <meta name="theme-color" content="#fbf8f2">
+  <link rel="icon" type="image/png" href="assets/logo/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="La Cocina de la Afri">
+  <meta property="og:description" content="Las recetas de la Afri ordenadas y explicadas paso a paso.">
+  <meta property="og:image" content="assets/logo/logo-480.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,400..700;1,400..600&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preload" as="image" href="assets/images/portada/ingredientes-reposteria-900.webp">
+</head>
+<body data-pagina="inicio">
+  <div id="cabecera"></div>
+
+  <main id="contenido">
+    <!-- Presentación -->
+    <section class="hero" aria-labelledby="titulo-hero">
+      <div class="contenedor hero__rejilla">
+        <div>
+          <p class="antetitulo">Recetario familiar</p>
+          <h1 id="titulo-hero">Las recetas de casa, <em>apuntadas con cariño</em></h1>
+          <p class="hero__texto">La colección de recetas de la Afri: bizcochos, dulces de sartén, platos de cuchara y comidas de diario, ordenados para cocinarlos paso a paso.</p>
+          <div class="hero__acciones">
+            <a class="boton boton--principal" href="recetas.html">Ver todas las recetas <span class="flecha" aria-hidden="true">→</span></a>
+            <a class="boton boton--secundario" href="#categorias">Explorar categorías</a>
+          </div>
+          <ul class="hero__cifras" id="cifras" aria-label="El recetario en cifras"></ul>
+        </div>
+        <div class="hero__visual">
+          <img class="hero__foto" src="assets/images/portada/ingredientes-reposteria-900.webp" width="900" height="1000" alt="Harina, huevos y mantequilla sobre un paño de rayas, listos para hornear." fetchpriority="high">
+          <div class="hero__sello"><img src="assets/logo/logo-480.png" width="190" height="190" alt="Logo de La Cocina de la Afri: ilustración de la Afri con delantal azul y una magdalena."></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recetas destacadas -->
+    <section class="seccion seccion--crema" aria-labelledby="titulo-destacadas">
+      <div class="contenedor">
+        <div class="seccion__cabecera revelar">
+          <div>
+            <p class="antetitulo">Para empezar</p>
+            <h2 id="titulo-destacadas">Un poco de todo</h2>
+            <p>Una selección variada del recetario: algo dulce, algo de cuchara y algo para el día a día.</p>
+          </div>
+          <a class="boton boton--texto" href="recetas.html">Ver todas <span class="flecha" aria-hidden="true">→</span></a>
+        </div>
+        <div class="rejilla" id="destacadas"></div>
+      </div>
+    </section>
+
+    <!-- Categorías -->
+    <section class="seccion" id="categorias" aria-labelledby="titulo-categorias">
+      <div class="contenedor">
+        <div class="seccion__cabecera revelar">
+          <div>
+            <p class="antetitulo">Explorar</p>
+            <h2 id="titulo-categorias">Por categorías</h2>
+            <p>Elige qué te apetece cocinar hoy.</p>
+          </div>
+        </div>
+        <div class="categorias" id="lista-categorias"></div>
+      </div>
+    </section>
+
+    <!-- Sobre la Afri -->
+    <section class="seccion seccion--crema" id="sobre-afri" aria-labelledby="titulo-sobre">
+      <div class="contenedor sobre">
+        <div class="sobre__retrato revelar" id="retrato-afri">
+          <img src="assets/logo/logo-480.png" width="400" height="400" alt="Ilustración de la Afri del logo de La Cocina de la Afri." loading="lazy">
+        </div>
+        <div class="sobre__texto revelar">
+          <p class="antetitulo">Sobre la Afri</p>
+          <h2 id="titulo-sobre">La mamá de sus hermanos</h2>
+          <div id="texto-sobre"></div>
+          <p class="sobre__firma">— Hecho con cariño y un poquito de azúcar (poquito, que hay que cuidarse)</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="pie"></div>
+
+  <script src="data/sitio.js"></script>
+  <script src="data/categorias.js"></script>
+  <script src="data/recetas.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/inicio.js"></script>
+</body>
+</html>
