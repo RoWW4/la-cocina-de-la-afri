@@ -44,17 +44,21 @@
   }).join("") + "</dl>" : "";
 
   /* ---------- Ingredientes ---------- */
+  function mayuscula(texto) { return texto.charAt(0).toUpperCase() + texto.slice(1); }
   var nIng = 0;
   var ingHTML = (r.ingredientes || []).map(function (g) {
     var items = (g.items || []).map(function (i) {
       var k = nIng++;
       var marcado = guardado.ing.indexOf(k) > -1;
+      // Cada ingrediente empieza en mayúscula (la cantidad, o el nombre si no hay cantidad).
+      var cantidad = i.cantidad ? mayuscula(i.cantidad) : "";
+      var nombre = i.cantidad ? (i.nombre || "") : mayuscula(i.nombre || "");
       return '<li><label class="ing">' +
         '<input type="checkbox" data-ing="' + k + '"' + (marcado ? " checked" : "") + ">" +
         '<span class="ing__caja" aria-hidden="true">' + CHECK + "</span>" +
         '<span class="ing__texto">' +
-          (i.cantidad ? '<span class="ing__cant">' + e(i.cantidad) + "</span> " : "") +
-          e(i.nombre || "") +
+          (cantidad ? '<span class="ing__cant">' + e(cantidad) + "</span> " : "") +
+          e(nombre) +
           (i.nota ? '<span class="ing__nota">' + e(i.nota) + "</span>" : "") +
         "</span>" +
       "</label></li>";

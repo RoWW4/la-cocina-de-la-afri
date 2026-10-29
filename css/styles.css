@@ -397,7 +397,8 @@ a:hover .flecha, button:hover .flecha { transform: translateX(3px); }
 .paso.actual { border-color: var(--azul); }
 .paso__num {
   width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center;
-  font-family: var(--serif); font-size: 1.25rem; font-weight: 700;
+  font-family: var(--sans); font-size: 1.15rem; font-weight: 800; line-height: 1;
+  font-variant-numeric: lining-nums tabular-nums;
   background: var(--azul-claro); color: var(--azul-oscuro);
   transition: background-color var(--medio), color var(--medio);
 }
